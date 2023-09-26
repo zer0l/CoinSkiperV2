@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Montserrat Alternates', sans-serif;
+            color: #E8EAED;
+        }
+        
+        .circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        
+        .wallet {
+            background-color: #6B7F82;
+        }
+        
+        .wallet-active {
+            background-color: rgb(3, 75, 143);
+        }
+        
+        .expenses {
+            background-color: #6B7F82;
+        }
+        
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .text {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #202124;">
+    <div style="width: 700px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; gap: 28px;">
+            <div class="header" style="margin-top: 20px; height: 24px; border-bottom: 1px solid #E8EAED; width: 678px; display: flex; align-items: center; padding: 7px 10px;">
+                <span style="font-weight: bold;">CoinSkiperV2</span>
+            </div>
+            <div>
+                <h2 style="margin: 0px 0px 15px 0px;">Кошельки</h2>
+                <div style="display: flex; gap:15px;flex-wrap: wrap;">
+                    <div class="block">
+                        <span class="text">Наличные</span>
+                        <div class="circle wallet" data-wallet="1"></div>
+                        <span class="text">4 333 333 Р.</span>
+                    </div>
+                    <div class="block">
+                        <span class="text">Карта</span>
+                        <div class="circle wallet" data-wallet="2"></div>
+                        <span class="text">5 333 333 Р.</span>
+                    </div>
+                    <div class="block">
+                        <span class="text">Вклад</span>
+                        <div class="circle wallet" data-wallet="3"></div>
+                        <span class="text">3 333 333 Р.</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 style="margin: 0px 0px 15px 0px;">Расходы</h2>
+                <div style="display: flex; gap:15px;flex-wrap: wrap;">
+                    <div class="block">
+                        <span class="text">Такси</span>
+                        <div class="circle expenses" data-expenses="1"></div>
+                        <span class="text">4 333 333 Р.</span>
+                    </div>
+                    <div class="block">
+                        <span class="text">Продукты</span>
+                        <div class="circle expenses" data-expenses="2"></div>
+                        <span class="text">4 333 333 Р.</span>
+                    </div>
+                    <div class="block">
+                        <span class="text">Еда</span>
+                        <div class="circle expenses" data-expenses="3"></div>
+                        <span class="text">4 333 333 Р.</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 style="margin: 0px 0px 15px 0px;">Диаграмма</h2>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script/main.js"></script>
+</body>
+
+</html>
