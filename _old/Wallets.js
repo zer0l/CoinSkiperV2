@@ -1,6 +1,6 @@
 import WalletClass from "./Classes/Wallet.Class.js";
 
-export default function Wallets(){
+export default function GetWallets(){
     fetch('backend/api/Wallet/Wallets.php')
     .then((response) => {
         return response.json();

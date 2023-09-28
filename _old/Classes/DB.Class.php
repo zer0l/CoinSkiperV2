@@ -26,9 +26,9 @@ class db {
 
       $result = $connect -> query("INSERT INTO `$tablename`($columns_name) VALUES ($columns_value)");
 
-      $myJSON = json_encode("ADD");
+      // $myJSON = json_encode("ADD");
                 
-      echo $myJSON;
+      // echo $myJSON;
   }
 
   function delete ($tablename,$params = []){
